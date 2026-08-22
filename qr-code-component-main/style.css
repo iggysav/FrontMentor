@@ -18,17 +18,14 @@ body {
     width: 320px;
     border-radius: 20px;
     text-align: center;
-    font-family: "Outfit", sans-serif ;
-
+    font-family: "Outfit", sans-serif;
 }
 .qr {
     width: 288px;
     margin: 16px 16px 24px 16px;
     border-radius: 10px;
-
 }
 .container h1 {
-
     font-size: 22px;
     line-height: 1.2;
     color: #1F314F;
