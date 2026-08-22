@@ -26,7 +26,7 @@ body {
     border-radius: 10px;
 }
 .container h1 {
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.2;
     color: #1F314F;
     text-align: center;
@@ -35,7 +35,7 @@ body {
 
 .container p {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.4;
     letter-spacing: 0.2px;
     color: #68778D;
