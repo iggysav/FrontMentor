@@ -33,6 +33,7 @@
       border-radius: 20px;
       box-shadow: 8px 8px  #000000;
       box-sizing: border-box;
+      width: fit-content;
       max-width: 384px;
       font-family: "Figtree", sans-serif;
       line-height: 1.5;
@@ -40,47 +41,53 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
+      margin: 0 24px 0 24px;
+      overflow: hidden;
     }
     .blog_info {
       display: flex;
       flex-direction: column;
       gap: 12px;
+
     }
     .blog_image {
       display: block;
       width: 100%;
+      height: 200px;
       border-radius: 10px;
+      object-fit: cover;
     }
     .badge {
       background-color: #F4D04E;
       width: fit-content;
       padding: 4px 12px;
       border-radius: 4px;
-      font-size: 0.875rem;
+      font-size: clamp(0.75rem, 2vw, 0.875rem);
       font-weight: 800;
       color: #111111;
     }
     .date {
       width: fit-content;
       color: #111111;
-      font-size: 0.875rem;
+      font-size: clamp(0.75rem, 2vw, 0.875rem);
       font-weight: 500;
     }
     h2 {
       margin: 0;
       color: #111111;
-      font-size: 1.5rem;
+      font-size: clamp(1.25rem, 1.6667vw, 1.5rem);
       font-weight: 800;
     }
     h2:hover {
       color: #F4D04E;
       cursor: url('assets/images/cursor.png'), pointer;
     }
-    .blog_info p {
+    .description {
       color: #6B6B6B;
-      font-size: 1rem;
+      font-size: clamp(0.875rem, 1.1111vw, 1rem);
       font-weight: 500;
       margin: 0;
+      width: 21em;
     }
     .author {
       color: #111111;
@@ -95,6 +102,7 @@
       height: 32px;
     }
 
+
   </style>
 </head>
 <body>
@@ -103,15 +111,15 @@
     <img class="blog_image" src="assets/images/illustration-article.svg" alt="Illustration article for blog card" >
 
     <div class="blog_info">
-      <div class="badge bot-12">Learning</div>
+      <div class="badge">Learning</div>
 
-      <time datetime="2023-12-21" class="date bot-12">Published 21 Dec 2023</time>
+      <time datetime="2023-12-21" class="date">Published 21 Dec 2023</time>
 
-      <h2 class="title bot-12">
+      <h2 class="title">
         HTML & CSS foundations
       </h2>
 
-      <p class="description bot-24">
+      <p class="description">
         These languages are the backbone of every website, defining structure, content, and presentation.
       </p>
     </div>
