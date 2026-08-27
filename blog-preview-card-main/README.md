@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/iggysav/FrontMentor/tree/master/blog-preview-card-main)
-- Live Site URL: [Live site](hhttps://iggysav.github.io/FrontMentor/blog-preview-card-main/)
+- Live Site URL: [Live site](https://iggysav.github.io/FrontMentor/blog-preview-card-main/)
 
 ## My process
 
@@ -60,7 +60,8 @@ Learned how to use clamp() for fluid font scaling in responsive layouts
 
 ### Continued development
 
-Implemented according to Figma templates. No help needed, but open to suggestions for more efficient/cleaner code alternatives.
+My main focus for future improvements is mastering fluid layouts without relying on media queries. While I successfully used clamp() for typography and calc() for dimensions in this project, I know there are more advanced techniques (like round() and Container Queries) that could make the code cleaner and more elegant.
+I also realized during this project that visual interactivity must match keyboard accessibility (like adding proper :focus-visible states). In my upcoming projects, I want to make accessibility a foundational part of my workflow, not an afterthought.
 
 
 ### AI Collaboration
