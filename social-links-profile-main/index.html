@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+      --color-accent: #141414;
+      --color-text: #1F1F1F;
+    }
+    body {
+      background-color: var(--color-accent);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      color: white;
+    }
+    .profile-preview {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background-color: #68778D;
+      border: solid 1px var(--color-text);
+      border-radius: 20px;
+      box-shadow: 8px 8px  #000000;
+      box-sizing: border-box;
+      width: min(calc(100% - 48px), 384px);
+      max-width: 384px;
+      font-family: "Figtree", sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin: 0 24px 0 24px;
+      overflow: hidden;
+    }
+
+  </style>
+</head>
+<body>
+<main class="profile-preview">
+  <article class="card">
+    <img class="profile-avatar" src="assets/images/avatar-jessica.jpeg" alt="" >
+    Jessica Randall
+    London, United Kingdom
+    "Front-end developer and avid reader."
+
+    <div>
+      GitHub
+      Frontend Mentor
+      LinkedIn
+      Twitter
+      Instagram
+    </div>
+  </article>
+</main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/iggysav/FrontMentor/tree/master/blog-preview-card-main">Iggysav</a>.
+  </footer>
+</body>
+</html>
