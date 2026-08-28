@@ -39,7 +39,7 @@
     .card {
       flex-direction: column;
       gap: 24px;
-      background-color: #68778D;
+      background-color: #1F1F1F;
       border-radius: 12px;
       box-sizing: border-box;
       width: min(calc(100% - 80px), 384px);
@@ -71,9 +71,23 @@
     }
     .social-links {
       font-size: 0.875rem;
-      font-weight: bold;
+      font-weight: 400;
+      align-self: stretch;
     }
-
+    .social-links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .social-links ul li {
+      padding: 12px 0;
+      background-color: #333333;
+      border-radius: 8px;
+      text-align: center;
+    }
 
   </style>
 </head>
@@ -88,11 +102,13 @@
     <div class="profession">"Front-end developer and avid reader."</div>
 
     <div class="social-links">
-      GitHub
-      Frontend Mentor
-      LinkedIn
-      Twitter
-      Instagram
+      <ul>
+        <li>GitHub</li>
+        <li>Frontend Mentor</li>
+        <li>LinkedIn</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
     </div>
   </article>
 </main>
