@@ -16,6 +16,11 @@
       --color-accent: #141414;
       --color-text: #1F1F1F;
     }
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     body {
       background-color: var(--color-accent);
       min-height: 100vh;
@@ -25,13 +30,9 @@
       color: white;
     }
     .profile-preview {
-      display: flex;
       flex: 1;
-      justify-content: center;
-      align-items: center;
     }
     .card {
-      display: flex;
       flex-direction: column;
       gap: 24px;
       background-color: #68778D;
@@ -42,16 +43,25 @@
       padding: 40px;
       overflow: hidden;
     }
+    h1 {
+      margin: 0;
+    }
+    .person {
+      flex-direction: column;
+      gap: 4px;
+    }
 
   </style>
 </head>
 <body>
-<main class="profile-preview">
-  <article class="card">
+<main class="profile-preview flex-center">
+  <article class="card flex-center">
     <img class="profile-avatar" src="assets/images/avatar-jessica.jpeg" alt="" >
-    Jessica Randall
-    London, United Kingdom
-    "Front-end developer and avid reader."
+    <div class="person flex-center">
+      <h1>Jessica Randall</h1>
+      <div class="address">London, United Kingdom</div>
+    </div>
+    <div class="profession">"Front-end developer and avid reader."</div>
 
     <div>
       GitHub
