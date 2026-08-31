@@ -12,6 +12,16 @@
 
 
   <style>
+
+    :root {
+      --color-bg-page: #141414;
+      --color-bg-card: #1F1F1F;
+      --color-bg-button: #333333;
+      --color-accent: #C4F82A;
+      --color-text-primary: #FFFFFF;
+      --color-text-secondary: #333333;
+    }
+
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -21,13 +31,13 @@
       align-items: center;
     }
     body {
-      background-color: #141414;
+      background-color: var(--color-bg-page);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       margin: 0;
       font-family: "Inter", sans-serif;
-      color: white;
+      color: var(--color-text-primary);
 
     }
     .profile-preview {
@@ -36,7 +46,7 @@
     .card {
       flex-direction: column;
       gap: 24px;
-      background-color: #1F1F1F;
+      background-color: var(--color-bg-card);
       border-radius: 12px;
       box-sizing: border-box;
       width: min(calc(100% - 80px), 384px);
@@ -56,7 +66,7 @@
     .address {
       font-size: 0.875rem;
       font-weight: 700;
-      color: #C4F82A;
+      color: var(--color-accent);
     }
     .profile-avatar{
       border-radius: 50%;
@@ -81,7 +91,7 @@
     }
     .social-links ul li {
       padding: 0;
-      background-color: #333333;
+      background-color: var(--color-bg-button);
       border-radius: 8px;
       text-align: center;
     }
@@ -96,8 +106,13 @@
 
     .social-links a:hover {
       cursor: url('assets/images/handcursor_black.svg'), pointer;
-      background-color: #C4F82A;
-      color: #333333;
+      background-color: var(--color-accent);
+      color: var(--color-text-secondary);
+    }
+    .social-links a:focus-visible {
+      color: var(--color-text-secondary);
+      outline: 1px solid var(--color-text-secondary);
+      background-color: var(--color-accent);
     }
 
   </style>
