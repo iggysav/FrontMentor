@@ -80,16 +80,22 @@
       margin: 0;
     }
     .social-links ul li {
-      padding: 12px 0;
+      padding: 0;
       background-color: #333333;
       border-radius: 8px;
       text-align: center;
     }
     .social-links a {
+      display: block;
       color: inherit;
       text-decoration: none;
+      padding: 12px 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      border-radius: 8px;
     }
-    .social-links li:hover {
+
+    .social-links a:hover {
+      cursor: url('assets/images/handcursor_black.svg'), pointer;
       background-color: #C4F82A;
       color: #333333;
     }
