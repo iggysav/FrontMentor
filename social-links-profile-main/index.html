@@ -49,7 +49,6 @@
       background-color: var(--color-bg-card);
       border-radius: 12px;
       box-sizing: border-box;
-      width: min(calc(100% - 80px), 384px);
       line-height: 1.5;
       padding: 40px;
       overflow: hidden;
@@ -115,6 +114,11 @@
       background-color: var(--color-accent);
     }
 
+    @media (max-width: 430px) {
+      .card {
+        padding: 24px;
+      }
+    }
   </style>
 </head>
 <body>
