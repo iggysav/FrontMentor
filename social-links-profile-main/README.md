@@ -76,4 +76,5 @@ I used ChatGPT as a learning assistant, as suggested in AGENTS.md. It was especi
 
 - Frontend Mentor - [@iggysav](https://www.frontendmentor.io/profile/iggysav)
 - Linkedin - [Linkedin](https://www.linkedin.com/in/savastsiuk-igor-527a1089/)
+- 
 
