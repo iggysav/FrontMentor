@@ -12,10 +12,21 @@
 
 
   <style>
+
+      :root {
+          --color-rose-800: #7A284E;
+          --color-rose-50: #FFF7FB;
+          --color-stone-900: #312E2C;
+          --color-stone-600: #5F564D;
+          --color-stone-150: #E3DDD7;
+          --color-stone-100: #F3E5D7;
+          --color-brown-800: #854632;
+      }
+
       body {
           margin: 0;
           padding: 128px 48px;
-          background-color:  #F3E5D7;
+          background-color:  var(--color-stone-100);
           min-height: 100vh;
           box-sizing: border-box;
           display: flex;
@@ -33,6 +44,7 @@
     width: min-content;
 }
 
+
 .recipe-picture {
     max-height: 300px;
     width: auto;
@@ -40,6 +52,33 @@
     border-radius: 12px;
 
 }
+
+/*<!-- Section Description Recipe -->*/
+
+.description_recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+}
+      .description_recipe h1 {
+          margin: 0;
+          color: var(--color-stone-900);
+          font-family: "Young Serif", serif;
+          font-size: 2.5rem;
+          font-weight: 400;
+          line-height: 1;
+}
+
+      .description_recipe p  {
+          margin: 0;
+          color: var(--color-stone-600);
+          font-family: "Outfit", serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+}
+
 
     /*<!-- Footer -->*/
     .attribution { font-size: 0.6875rem; text-align: center; }
@@ -50,10 +89,12 @@
  <main>
   <article class="card">
    <img src="./assets/images/image-omelette.jpeg" alt="Simple Omelette picture" class="recipe-picture">
-   <h1>Simple Omelette Recipe</h1>
+      <div class="description_recipe">
+          <h1>Simple Omelette Recipe</h1>
 
-   <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
-     to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+          <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+              to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </div>
    <section>
        <h2>Preparation time</h2>
 
