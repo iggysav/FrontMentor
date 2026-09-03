@@ -36,47 +36,47 @@
 
       }
 
-.card {
-    background-color: white;
-    padding: 40px;
-    border-radius: 24px;
-    max-width: 100%;
-    width: min-content;
-}
-      .card > section:nth-child(3),
-      .card > section:nth-child(4) {
-          margin-top: 32px;
+    .card {
+        background-color: white;
+        padding: 40px;
+        border-radius: 24px;
+        max-width: 100%;
+        width: min-content;
+    }
+      .card > *:not(:first-child):not(:last-child) {
+          margin-bottom: 32px;
       }
 
       .card > section:nth-child(5),
       .card > section:nth-child(6) {
-          margin-top: 64px;
+          padding-top: 32px;
+          border-top: 1px solid var(--color-stone-150);
       }
 
-/*<!-- Recipe's Image -->*/
-.recipe-picture {
-    max-height: 300px;
-    width: auto;
-    display: block;
-    border-radius: 12px;
+    /*<!-- Recipe's Image -->*/
+    .recipe-picture {
+        max-height: 300px;
+        width: auto;
+        display: block;
+        border-radius: 12px;
 
-}
+    }
 
-/*<!-- Section Description Recipe -->*/
-.description_recipe {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 40px;
-}
-      .description_recipe h1 {
-          margin: 0;
-          color: var(--color-stone-900);
-          font-family: "Young Serif", serif;
-          font-size: 2.5rem;
-          font-weight: 400;
-          line-height: 1;
-}
+    /*<!-- Section Description Recipe -->*/
+    .description_recipe {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 40px;
+    }
+          .description_recipe h1 {
+              margin: 0;
+              color: var(--color-stone-900);
+              font-family: "Young Serif", serif;
+              font-size: 2.5rem;
+              font-weight: 400;
+              line-height: 1;
+    }
 
       .description_recipe p  {
           margin: 0;
@@ -85,7 +85,7 @@
           font-size: 1rem;
           font-weight: 400;
           line-height: 1.5;
-}
+      }
 
       /*<!-- Section Preparation Time Recipe -->*/
       .preparation_time_recipe {
@@ -120,7 +120,16 @@
           padding-left: 16px;
       }
 
+    /*<!--Another h2 -->*/
+    h2 {
+        color: var(--color-brown-800);
+        font-family: "Young Serif", serif;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0 0 24px 0;
 
+    }
 
     /*<!-- Footer -->*/
     .attribution { font-size: 0.6875rem; text-align: center; }
