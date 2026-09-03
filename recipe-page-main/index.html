@@ -87,6 +87,39 @@
           line-height: 1.5;
 }
 
+      /*<!-- Section Preparation Time Recipe -->*/
+      .preparation_time_recipe {
+          background-color:  var(--color-rose-50);
+          border-radius: 12px;
+          padding: 24px;
+      }
+      .preparation_time_recipe h2 {
+          margin: 0;
+          color: var(--color-rose-800);
+          font-family: "Outfit", serif;
+          font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 1;
+      }
+      .preparation_time_recipe ul {
+          color: var(--color-stone-600);
+          font-family: "Outfit", serif;
+          font-size: 1rem;
+          line-height: 1.5;
+          padding-left: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-bottom: 0;
+      }
+      .preparation_time_recipe ul li::marker {
+          font-size: 12px;
+          color: var(--color-rose-800);
+      }
+      .preparation_time_recipe ul li {
+          padding-left: 16px;
+      }
+
 
 
     /*<!-- Footer -->*/
@@ -107,11 +140,11 @@
 
    <section class="preparation_time_recipe">
        <h2>Preparation time</h2>
-
-     Total: Approximately 10 minutes
-     Preparation: 5 minutes
-     Cooking: 5 minutes
-
+        <ul>
+            <li><strong>Total:</strong> Approximately 10 minutes</li>
+            <li><strong>Preparation:</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
+        </ul>
    </section>
 
      <section>
