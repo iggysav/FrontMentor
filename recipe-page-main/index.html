@@ -154,7 +154,6 @@
     }
 
       /*<!-- Instructions Recipe -->*/
-
     .instructions_recipe ol li {
         padding-left: 16px;
     }
@@ -164,10 +163,57 @@
         font-size: 1rem;
         line-height: 1.5;
         font-weight: bold;
-
     }
 
-    /*<!-- Footer -->*/
+      .nutrition_recipe {
+          font-family: "Outfit", serif;
+          font-size: 1rem;
+          line-height: 1.5;
+      }
+
+      .nutrition_recipe p {
+          margin: 0 0 24px 0;
+          color: var(--color-stone-600);
+      }
+
+      .nutrition_table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 24px;
+      }
+
+      .nutrition_table td {
+          padding: 12px 0;
+          border-bottom: 1px solid var(--color-stone-150);
+      }
+
+      .nutrition_table td:first-child {
+          padding-left: 32px;
+
+          color: var(--color-stone-600);
+          font-weight: 400;
+      }
+
+
+      .nutrition_table td:last-child {
+          padding-right: 32px;
+          color: var(--color-brown-800);
+          font-weight: 700;
+      }
+
+      .nutrition_table tr:last-child td {
+          border-bottom: none;
+      }
+
+      .nutrition_table tr:first-child td {
+          padding-top: 0;
+      }
+
+      .nutrition_table tr:last-child td {
+          padding-bottom: 0;
+      }
+
+      /*<!-- Footer -->*/
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -237,22 +283,28 @@
          </ol>
      </section>
 
-     <section>
+     <section class="nutrition_recipe">
          <h2>Nutrition</h2>
 
-         The table below shows nutritional values per serving without the additional fillings.
-
-         Calories
-         277kcal
-
-         Carbs
-         0g
-
-         Protein
-         20g
-
-         Fat
-         22g
+         <p>The table below shows nutritional values per serving without the additional fillings.</p>
+         <table class="nutrition_table">
+             <tr>
+                 <td>Calories</td>
+                 <td>277kcal</td>
+             </tr>
+             <tr>
+                 <td>Carbs</td>
+                 <td>0g</td>
+             </tr>
+             <tr>
+                 <td>Protein</td>
+                 <td>20g</td>
+             </tr>
+             <tr>
+                 <td>Fat</td>
+                 <td>22g</td>
+             </tr>
+         </table>
      </section>
   </article>
 
