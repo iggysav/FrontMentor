@@ -42,6 +42,7 @@
         border-radius: 24px;
         max-width: 100%;
         width: min-content;
+        box-sizing: border-box;
     }
         /*<!-- Common list styles --> */
       .card > *:not(:first-child):not(:last-child) {
@@ -213,6 +214,15 @@
           padding-bottom: 0;
       }
 
+      /* Adaptive style */
+      @media (max-width: 768px) {
+          .card {
+              width: 616px;
+              max-width: 100%;
+          }
+      }
+
+
       /*<!-- Footer -->*/
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -311,7 +321,7 @@
  </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/iggysav/FrontMentor/tree/master/blog-preview-card-main">Iggysav</a>.
   </footer>
 </body>
 </html>
