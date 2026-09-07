@@ -36,15 +36,18 @@
 
       }
 
-    .card {
-        background-color: white;
-        padding: 40px;
-        border-radius: 24px;
-        width: 736px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-        /*<!-- Common list styles --> */
+
+      .card {
+          background-color: white;
+          width: 736px;
+          max-width: 100%;
+          padding: 40px;
+          border-radius: 24px;
+          box-sizing: border-box;
+      }
+
+
+      /*<!-- Common list styles --> */
       .card > *:not(:first-child):not(:last-child) {
           margin-bottom: 32px;
       }
@@ -74,16 +77,16 @@
       }
 
     /*<!-- Recipe's Image -->*/
-    .recipe-picture {
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-        display: block;
-        border-radius: 12px;
 
-    }
+      .recipe-picture {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 12px;
+      }
 
-    /*<!-- Section Description Recipe -->*/
+
+      /*<!-- Section Description Recipe -->*/
     .description_recipe {
         display: flex;
         flex-direction: column;
@@ -217,16 +220,45 @@
 
       /* Adaptive style */
       @media (max-width: 768px) {
+
+          body {
+              padding: clamp(0px, calc((100vw - 375px) * 128 / 393), 128px) clamp(0px, calc((100vw - 375px) * 48 / 393), 48px);
+          }
+
           .card {
-              width: 616px;
+              width: clamp(375px, calc(375px + (100vw - 375px) * 241 / 393), 616px);
               max-width: 100%;
+              padding: clamp(0px,calc((100vw - 375px) * 40 / 393),40px) clamp(32px, calc(32px + (100vw - 375px) * 8 / 393),40px) 40px;
+          }
+
+          .description_recipe h1 {
+              font-size: clamp(
+                      2.25rem,
+                      calc(2.25rem + (100vw - 375px) * 0.25 / 393),
+                      2.5rem
+              );
+          }
+
+          .recipe-picture {
+              --image-overflow: clamp(0px, calc((768px - 100vw) * 32 / 393), 32px);
+              width: calc(100% + var(--image-overflow) * 2);
+              margin-left: calc(-1 * var(--image-overflow));
           }
       }
 
+      @media (max-width: 375px) {
+          .card {
+              border-radius: 0;
+          }
+
+          .recipe-picture {
+              border-radius: 0;
+          }
+      }
 
       /*<!-- Footer -->*/
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+      .attribution { font-size: 0.6875rem; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
 </head>
@@ -267,7 +299,7 @@
      <section class="instructions_recipe">
          <h2>Instructions</h2>
          <ol>
-             <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are
+             <li><strong>Beat the eggs:</strong>In a bowl, beat the eggs with a pinch of salt and pepper until they are
                  well mixed.
                  You can add a tablespoon of water or milk for a fluffier texture.
              </li>
