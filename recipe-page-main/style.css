@@ -160,18 +160,18 @@ h2 {
     margin-top: 24px;
 }
 
-.nutrition_table td {
+.nutrition_table td,
+.nutrition_table th {
     padding: 12px 0;
     border-bottom: 1px solid var(--color-stone-150);
+    text-align: left;
 }
-
+.nutrition_table th,
 .nutrition_table td:first-child {
     padding-left: 32px;
-
     color: var(--color-stone-600);
     font-weight: 400;
 }
-
 
 .nutrition_table td:last-child {
     padding-right: 32px;
@@ -183,11 +183,13 @@ h2 {
     border-bottom: none;
 }
 
-.nutrition_table tr:first-child td {
+.nutrition_table tr:first-child td,
+.nutrition_table tr:first-child th {
     padding-top: 0;
 }
 
-.nutrition_table tr:last-child td {
+.nutrition_table tr:last-child td,
+.nutrition_table tr:last-child th {
     padding-bottom: 0;
 }
 
