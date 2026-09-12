@@ -35,6 +35,12 @@ body {
   display: block;
   width: 100%;
 }
+.product__category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.3125rem;
+}
 
 /* Footer section */
 .attribution {

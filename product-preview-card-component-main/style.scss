@@ -44,12 +44,20 @@ body {
     }
   }
 }
-//Product image
-  .product__image {
+//Product block style
+.product {
+  &__image {
     display: block;
     width: 100%;
   }
+  &__category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.3125rem;
+  }
 
+}
 
 
 
