@@ -1,14 +1,23 @@
 
+//Color variables
+$bg-color-main: #F2EAE2;
+$bg-color-box: #FFFFFF;
+$text-color-h1: #1C232B;
+$text-color-main: #6C7289;
+$btn-prc-color: #3D8168;
+$btn-color-hover: #1A4032;
+
+
 
 /*Global style*/
 body {
-  background-color: #F2EAE2;
+  background-color: $bg-color-main;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  //justify-content: center;
+  color: $text-color-main;
 }
 
 .card {
@@ -19,7 +28,6 @@ body {
   justify-content: center;
    .box {
     flex: 0 1 300px;
-    //background: white;
     font-size: 1rem;
     text-align: center;
     margin: 0;
@@ -29,14 +37,12 @@ body {
 
 .box--image {
   .product-avatar {
-    //max-width: 300px;
     display: block;
     width: 100%;
   }
 }
 .box--info {
-  background: white;
-  //max-height: 450px;
+  background: $bg-color-box;
 }
 
 /* Footer section */

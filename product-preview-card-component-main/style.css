@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: #6C7289;
 }
 
 .card {
@@ -28,7 +29,7 @@ body {
 }
 
 .box--info {
-  background: white;
+  background: #FFFFFF;
 }
 
 /* Footer section */
