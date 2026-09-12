@@ -19,17 +19,21 @@ body {
 .card .box {
   flex: 0 1 300px;
   font-size: 1rem;
-  text-align: center;
   margin: 0;
 }
-
-.box--image .product-avatar {
-  display: block;
-  width: 100%;
+.card .box--info {
+  background: #FFFFFF;
+  border-radius: 0 8px 8px 0;
+  padding: 32px;
+}
+.card .box--image {
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
 }
 
-.box--info {
-  background: #FFFFFF;
+.product__image {
+  display: block;
+  width: 100%;
 }
 
 /* Footer section */

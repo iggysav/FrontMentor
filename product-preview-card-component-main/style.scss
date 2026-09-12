@@ -8,7 +8,6 @@ $btn-prc-color: #3D8168;
 $btn-color-hover: #1A4032;
 
 
-
 /*Global style*/
 body {
   background-color: $bg-color-main;
@@ -20,30 +19,39 @@ body {
   color: $text-color-main;
 }
 
+// Card style with image & info blocks
 .card {
   display: flex;
-  flex:1;
+  flex: 1;
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
-   .box {
+
+  .box {
     flex: 0 1 300px;
     font-size: 1rem;
-    text-align: center;
     margin: 0;
 
+    &--info {
+      background: $bg-color-box;
+      border-radius: 0 8px 8px 0;
+      padding: 32px;
+    }
+
+    &--image {
+      border-radius: 8px 0 0 8px;
+      overflow: hidden;
+    }
   }
 }
-
-.box--image {
-  .product-avatar {
+//Product image
+  .product__image {
     display: block;
     width: 100%;
   }
-}
-.box--info {
-  background: $bg-color-box;
-}
+
+
+
 
 /* Footer section */
 .attribution { font-size: 0.6875rem; text-align: center; }
