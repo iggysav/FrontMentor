@@ -1,0 +1,44 @@
+/*Global style*/
+body {
+  background-color: #F2EAE2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card .box {
+  flex: 0 1 300px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.box--image .product-avatar {
+  display: block;
+  width: 100%;
+}
+
+.box--info {
+  background: white;
+}
+
+/* Footer section */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
