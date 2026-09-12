@@ -20,6 +20,7 @@ body {
   flex: 0 1 300px;
   font-size: 1rem;
   margin: 0;
+  box-sizing: border-box;
 }
 .card .box--info {
   background: #FFFFFF;
@@ -40,6 +41,14 @@ body {
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.3125rem;
+}
+.product__title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  color: #1C232B;
+  margin: 24px 0;
 }
 
 /* Footer section */

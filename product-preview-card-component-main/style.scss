@@ -27,11 +27,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 
+
   .box {
     flex: 0 1 300px;
     font-size: 1rem;
     margin: 0;
-
+    box-sizing: border-box;
     &--info {
       background: $bg-color-box;
       border-radius: 0 8px 8px 0;
@@ -55,6 +56,15 @@ body {
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.3125rem;
+  }
+  &__title {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    color: $text-color-h1;
+    margin: 24px 0;
+
   }
 
 }
