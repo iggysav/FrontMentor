@@ -1,6 +1,8 @@
 /*Global style*/
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,7 +10,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   color: #6C7289;
 }
@@ -40,6 +41,7 @@ body {
   width: 100%;
 }
 .product__category {
+  display: block;
   font-size: 0.75rem;
   text-transform: uppercase;
   line-height: 1.2;
@@ -74,6 +76,24 @@ body {
 .product__price-old {
   font-size: 0.8125rem;
   line-height: 1.2;
+}
+.product__button {
+  width: 100%;
+  border: none;
+  background: #3D8168;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+.product__button::before {
+  content: url("images/icon-cart.svg");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 /* Footer section */
