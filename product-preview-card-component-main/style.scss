@@ -9,6 +9,11 @@ $btn-color-hover: #1A4032;
 
 
 /*Global style*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: $bg-color-main;
   min-height: 100vh;
@@ -27,23 +32,22 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 
+    .box {
+      flex: 0 1 300px;
+      font-size: 1rem;
+      margin: 0;
 
-  .box {
-    flex: 0 1 300px;
-    font-size: 1rem;
-    margin: 0;
-    box-sizing: border-box;
-    &--info {
-      background: $bg-color-box;
-      border-radius: 0 8px 8px 0;
-      padding: 32px;
-    }
+        &--info {
+          background: $bg-color-box;
+          border-radius: 0 8px 8px 0;
+          padding: 32px;
+        }
 
-    &--image {
-      border-radius: 8px 0 0 8px;
-      overflow: hidden;
+        &--image {
+          border-radius: 8px 0 0 8px;
+          overflow: hidden;
+        }
     }
-  }
 }
 //Product block style
 .product {
@@ -64,7 +68,10 @@ body {
     line-height: 1;
     color: $text-color-h1;
     margin: 24px 0;
-
+  }
+  &__description {
+    font-size: 0.875rem;
+    line-height: 1.6;
   }
 
 }
