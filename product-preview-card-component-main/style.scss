@@ -7,6 +7,9 @@ $text-color-main: #6C7289;
 $btn-prc-color: #3D8168;
 $btn-color-hover: #1A4032;
 
+//font variables
+$font-body: "Montserrat", sans-serif;
+$font-h1-price: "Fraunces", serif;
 
 /*Global style*/
 *, *::before, *::after {
@@ -20,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-body;
   color: $text-color-main;
 }
 
@@ -62,7 +65,7 @@ body {
     letter-spacing: 0.3125rem;
   }
   &__title {
-    font-family: "Fraunces", serif;
+    font-family: $font-h1-price;
     font-weight: 700;
     font-size: 2rem;
     line-height: 1;
@@ -72,6 +75,25 @@ body {
   &__description {
     font-size: 0.875rem;
     line-height: 1.6;
+    margin: 0;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 0;
+
+      &-new {
+        font-family: $font-h1-price;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        color: $btn-prc-color;
+      }
+      &-old {
+        font-size: 0.8125rem;
+        line-height: 1.2;
+      }
   }
 
 }

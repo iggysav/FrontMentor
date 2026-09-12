@@ -56,6 +56,24 @@ body {
 .product__description {
   font-size: 0.875rem;
   line-height: 1.6;
+  margin: 0;
+}
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+}
+.product__price-new {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  color: #3D8168;
+}
+.product__price-old {
+  font-size: 0.8125rem;
+  line-height: 1.2;
 }
 
 /* Footer section */
