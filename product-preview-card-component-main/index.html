@@ -16,7 +16,12 @@
 
   <main class="card">
     <div class="box box--image">
-      <img class="product__image" src="images/image-product-desktop.jpg" alt="A bottle of perfume CHANEL Gabrielle">
+
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg" type="image/jpeg">
+        <img class="product__image" src="images/image-product-desktop.jpg" alt="A bottle of perfume CHANEL Gabrielle">
+      </picture>
+
     </div>
     <article class="box box--info product">
       <span class="product__category">Perfume</span>
