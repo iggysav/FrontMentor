@@ -1,5 +1,5 @@
 
-//Color variables
+/*Color variables*/
 $bg-color-main: #F2EAE2;
 $bg-color-box: #FFFFFF;
 $text-color-h1: #1C232B;
@@ -8,7 +8,7 @@ $btn-prc-color: #3D8168;
 $btn-color-hover: #1A4032;
 $btn-txt-color: #FFFFFF;
 
-//font variables
+/*font variables*/
 $font-body: "Montserrat", sans-serif;
 $font-h1-price: "Fraunces", serif;
 
@@ -29,7 +29,7 @@ body {
   color: $text-color-main;
 }
 
-// Card style with image & info blocks
+/* Card style with image & info blocks*/
 .card {
   display: flex;
   flex: 1;
@@ -43,7 +43,7 @@ body {
       margin: 0;
 
         &--info {
-          background: $bg-color-box;
+          background-color: $bg-color-box;
           border-radius: 0 8px 8px 0;
           padding: 32px;
         }
@@ -55,7 +55,8 @@ body {
         }
     }
 }
-//Product block style
+
+/*Product block style*/
 .product {
   &__image {
     display: block;
@@ -102,13 +103,24 @@ body {
   &__button {
     width: 100%;
     border: none;
-    background: $btn-prc-color;
+    background-color: $btn-prc-color;
     color: $btn-txt-color;
     font-size: 0.875rem;
     line-height: 1.1;
     font-weight: 700;
     padding: 16px 32px;
     border-radius: 8px;
+    transition: background-color 0.3s ease;
+      &:hover {
+        background-color: $btn-color-hover;
+        cursor: pointer;
+      }
+      &:focus-visible {
+        background-color: $btn-color-hover;
+        outline: 2px solid $btn-color-hover;
+        outline-offset: 1px;
+      }
+
   }
 
 }

@@ -1,3 +1,5 @@
+/*Color variables*/
+/*font variables*/
 /*Global style*/
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,6 +16,7 @@ body {
   color: #6C7289;
 }
 
+/* Card style with image & info blocks*/
 .card {
   display: flex;
   flex: 1;
@@ -27,7 +30,7 @@ body {
   margin: 0;
 }
 .card .box--info {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 0 8px 8px 0;
   padding: 32px;
 }
@@ -37,6 +40,7 @@ body {
   overflow: hidden;
 }
 
+/*Product block style*/
 .product__image {
   display: block;
   width: 100%;
@@ -82,13 +86,23 @@ body {
 .product__button {
   width: 100%;
   border: none;
-  background: #3D8168;
+  background-color: #3D8168;
   color: #FFFFFF;
   font-size: 0.875rem;
   line-height: 1.1;
   font-weight: 700;
   padding: 16px 32px;
   border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.product__button:hover {
+  background-color: #1A4032;
+  cursor: pointer;
+}
+.product__button:focus-visible {
+  background-color: #1A4032;
+  outline: 2px solid #1A4032;
+  outline-offset: 1px;
 }
 
 .product__button::before {
