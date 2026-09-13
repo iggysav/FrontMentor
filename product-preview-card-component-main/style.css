@@ -112,6 +112,7 @@ body {
   border: none;
   background-color: #3D8168;
   color: #FFFFFF;
+  font-family: inherit;
   font-size: 0.875rem;
   line-height: 1.1;
   font-weight: 700;

@@ -4,7 +4,8 @@ $bg-color-main: #F2EAE2;
 $bg-color-box: #FFFFFF;
 $text-color-h1: #1C232B;
 $text-color-main: #6C7289;
-$btn-prc-color: #3D8168;
+$prc-color: #3D8168;
+$btn-color: #3D8168;
 $btn-color-hover: #1A4032;
 $btn-txt-color: #FFFFFF;
 
@@ -106,7 +107,7 @@ body {
         font-weight: 700;
         font-size: 2rem;
         line-height: 1;
-        color: $btn-prc-color;
+        color: $prc-color;
       }
       &-old {
         font-size: 0.8125rem;
@@ -119,8 +120,9 @@ body {
   &__button {
     width: 100%;
     border: none;
-    background-color: $btn-prc-color;
+    background-color: $btn-color;
     color: $btn-txt-color;
+    font-family: inherit;
     font-size: 0.875rem;
     line-height: 1.1;
     font-weight: 700;
