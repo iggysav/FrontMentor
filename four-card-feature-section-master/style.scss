@@ -1,7 +1,23 @@
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
+body {
 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //font-family: $font-body;
+  //color: $text-color-main;
+}
+
+.features {
+  flex: 1;
+}
 
 .attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
