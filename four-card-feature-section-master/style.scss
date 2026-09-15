@@ -1,4 +1,12 @@
 
+$color-info-main: #4D4F62;
+$color-info-card: #6A7178;
+$color-teambuilder: #EA5454;
+$color-supervisor: #44D3D2;
+$color-calculator: #549EF2;
+$color-karma: #FCAE4A;
+
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -11,8 +19,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  //font-family: $font-body;
-  //color: $text-color-main;
+
 }
 
 .features {
