@@ -12,6 +12,24 @@ body {
 
 .features {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.card {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+.card__image {
+  align-self: flex-end;
 }
 
 .attribution {

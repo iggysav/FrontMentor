@@ -5,7 +5,7 @@ $color-teambuilder: #EA5454;
 $color-supervisor: #44D3D2;
 $color-calculator: #549EF2;
 $color-karma: #FCAE4A;
-
+$color-card-bg: #FFFFFF;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -15,7 +15,6 @@ $color-karma: #FCAE4A;
 
 
 body {
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +23,25 @@ body {
 
 .features {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
+.card {
+  background-color: $color-card-bg;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+  &__image {
+    align-self: flex-end;
+  }
+
+}
 .attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
