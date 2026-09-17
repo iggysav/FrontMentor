@@ -29,6 +29,25 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+  &__info {
+    padding-top: 100px;
+    max-width: 540px;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+    text-align: center;
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 200;
+      span {
+        font-weight: 600;
+      }
+    }
+    p {
+      font-size: 0.9375rem;
+      letter-spacing: 0.1px;
+      padding-top: 16px;
+    }
+  }
 }
 
 .card {
