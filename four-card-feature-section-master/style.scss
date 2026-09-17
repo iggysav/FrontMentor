@@ -75,7 +75,30 @@ body {
   &__text {
     color: $color-info-card;
   }
+  &--supervisor {
+    grid-area: supervisor;
+  }
+  &--teambuilder {
+    grid-area: teambuilder;
+  }
+  &--calculator {
+    grid-area: calculator;
+  }
+  &--karma {
+    grid-area: karma;
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+  '. teambuilder .'
+  'supervisor teambuilder calculator'
+  'supervisor karma calculator'
+  '. karma .';
 
+  gap: 32px;
 }
 .attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
