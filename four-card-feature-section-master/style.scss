@@ -14,7 +14,6 @@ $font-main: "Poppins", sans-serif;
   padding: 0;
 }
 
-
 body {
   min-height: 100vh;
   display: flex;
@@ -51,6 +50,8 @@ body {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   background-color: $color-card-bg;
   display: flex;
   flex-direction: column;
@@ -63,6 +64,15 @@ body {
   font-size: 0.8125rem;
   line-height: 1.6;
   letter-spacing: 0.09px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--color-border-card);
+  }
   &__image {
     align-self: flex-end;
     margin-top: 26px;
@@ -77,15 +87,19 @@ body {
   }
   &--supervisor {
     grid-area: supervisor;
+    --color-border-card: #{$color-supervisor};
   }
   &--teambuilder {
     grid-area: teambuilder;
+    --color-border-card: #{$color-teambuilder};
   }
   &--calculator {
     grid-area: calculator;
+    --color-border-card: #{$color-calculator};
   }
   &--karma {
     grid-area: karma;
+    --color-border-card: #{$color-karma};
   }
 }
 .cards {

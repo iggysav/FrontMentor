@@ -40,6 +40,8 @@ body {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -52,6 +54,15 @@ body {
   font-size: 0.8125rem;
   line-height: 1.6;
   letter-spacing: 0.09px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--color-border-card);
 }
 .card__image {
   align-self: flex-end;
@@ -67,15 +78,19 @@ body {
 }
 .card--supervisor {
   grid-area: supervisor;
+  --color-border-card: #44D3D2;
 }
 .card--teambuilder {
   grid-area: teambuilder;
+  --color-border-card: #EA5454;
 }
 .card--calculator {
   grid-area: calculator;
+  --color-border-card: #549EF2;
 }
 .card--karma {
   grid-area: karma;
+  --color-border-card: #FCAE4A;
 }
 
 .cards {
