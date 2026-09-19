@@ -17,7 +17,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  gap: 74px;
+}
+@media (max-width: 700px) {
+  .features {
+    gap: 60px;
+  }
 }
 .features__info {
   padding-top: 100px;
@@ -31,11 +36,22 @@ body {
     padding-top: 77px;
   }
 }
+@media (max-width: 700px) {
+  .features__info {
+    padding: 55px 25px 0 25px;
+  }
+}
 .features__info h1 {
   font-size: 2.25rem;
   font-weight: 200;
 }
+@media (max-width: 700px) {
+  .features__info h1 {
+    font-size: clamp(24px, 24px + (100vw - 375px) * 12 / 325, 36px);
+  }
+}
 .features__info h1 span {
+  display: block;
   font-weight: 600;
 }
 .features__info p {
@@ -116,6 +132,12 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: ". teambuilder teambuilder ." "supervisor supervisor karma karma" ". calculator calculator .";
+  }
+}
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-areas: "supervisor" "teambuilder" "karma" "calculator";
   }
 }
 
