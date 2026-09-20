@@ -1,4 +1,3 @@
-
 $color-info-main: #4D4F62;
 $color-info-card: #6A7178;
 $color-teambuilder: #EA5454;
@@ -31,6 +30,7 @@ body {
   @media (max-width: 700px) {
     gap: 60px;
   }
+
   &__info {
     padding-top: 100px;
     max-width: 540px;
@@ -43,17 +43,20 @@ body {
     @media (max-width: 700px) {
       padding: 55px 25px 0 25px;
     }
+
     h1 {
       font-size: 2.25rem;
       font-weight: 200;
-        @media (max-width: 700px) {
-          font-size: clamp(24px, calc(24px + (100vw - 375px) * (36 - 24) / (700 - 375)), 36px);
-        }
+      @media (max-width: 700px) {
+        font-size: clamp(24px, calc(24px + (100vw - 375px) * (36 - 24) / (700 - 375)), 36px);
+      }
+
       span {
         display: block;
         font-weight: 600;
       }
     }
+
     p {
       font-size: 0.9375rem;
       letter-spacing: 0.1px;
@@ -77,9 +80,10 @@ body {
   font-size: 0.8125rem;
   line-height: 1.6;
   letter-spacing: 0.09px;
-    @media (max-width: 1045px) {
-      max-width: 314px;
-    }
+  @media (max-width: 1045px) {
+    max-width: 314px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -89,39 +93,47 @@ body {
     height: 4px;
     background-color: var(--color-border-card);
   }
+
   &__image {
     align-self: flex-end;
     margin-top: 26px;
   }
+
   &__title {
     font-size: 1.25rem;
     line-height: 1.35;
     font-weight: 600;
   }
+
   &__text {
     color: $color-info-card;
   }
+
   &--supervisor {
     grid-area: supervisor;
     --color-border-card: #{$color-supervisor};
   }
+
   &--teambuilder {
     grid-area: teambuilder;
     --color-border-card: #{$color-teambuilder};
   }
+
   &--calculator {
     grid-area: calculator;
     --color-border-card: #{$color-calculator};
   }
+
   &--karma {
     grid-area: karma;
     --color-border-card: #{$color-karma};
   }
 }
+
 .cards {
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
   '. teambuilder .'
@@ -129,23 +141,30 @@ body {
   'supervisor karma calculator'
   '. karma .';
   margin: 0 20px;
-    @media (max-width: 1045px) {
-      grid-template-columns: repeat(4, 1fr) ;
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-areas:
+  @media (max-width: 1045px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
       '. teambuilder teambuilder .'
       'supervisor supervisor karma karma'
       '. calculator calculator .';
-    }
-    @media (max-width: 700px) {
-      grid-template-columns: 1fr;
-      grid-template-areas:
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
       'supervisor'
       'teambuilder'
       'karma'
       'calculator';
-    }
+  }
 
 }
-.attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
