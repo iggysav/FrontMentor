@@ -53,7 +53,7 @@ Users should be able to:
 
 ```scss
 $color-supervisor: #44D3D2;
-card--supervisor {
+.card--supervisor {
   --color-border-card: #{$color-supervisor};
 }
 .card::before {
