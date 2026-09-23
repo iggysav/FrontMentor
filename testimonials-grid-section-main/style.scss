@@ -32,12 +32,48 @@ $font-main: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   font-family: $font-main;
   font-size: 0.8125rem;
   font-weight: 500;
+  //align-items: center;
+
+}
+.rev-1 {
+  grid-area: rev-1;
+}
+.rev-2 {
+  grid-area: rev-2;
+}
+.rev-3 {
+  grid-area: rev-3;
+}
+.rev-4 {
+  grid-area: rev-4;
+}
+.rev-5 {
+  grid-area: rev-5;
+}
+.reviews {
+  flex: 1;
+  display: grid;
+  margin-inline: auto;
+  align-content: center;
+  gap: 24px 32px;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-areas:
+  'rev-1 rev-1 rev-2 rev-5'
+  'rev-3 rev-4 rev-4 rev-5';
 }
 
 
 
-.attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
