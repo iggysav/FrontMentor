@@ -1,4 +1,5 @@
 // Colors
+$color-background: #F6F5F6;
 $color-white: #FFFFFF;
 $color-black: #121212;
 $color-dark-blue: #19202D;
@@ -38,9 +39,34 @@ body {
   font-family: $font-main;
   font-size: 0.8125rem;
   font-weight: 500;
-  //align-items: center;
+  background-color: $color-background;
 
 }
+
+.reviews {
+  flex: 1;
+  display: grid;
+  margin-inline: auto;
+  align-content: center;
+  gap: 24px 32px;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-areas:
+  'rev-1 rev-1 rev-2 rev-5'
+  'rev-3 rev-4 rev-4 rev-5';
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  box-shadow: 50px 70px 50px -7px rgba(72, 85, 106, 0.24);
+  padding: 32px;
+  background-color: var(--color-background-card);
+  color: var(--color-font);
+}
+
+
 .rev-1 {
   grid-area: rev-1;
 }
@@ -56,18 +82,6 @@ body {
 .rev-5 {
   grid-area: rev-5;
 }
-.reviews {
-  flex: 1;
-  display: grid;
-  margin-inline: auto;
-  align-content: center;
-  gap: 24px 32px;
-  grid-template-columns: repeat(4, 255px);
-  grid-template-areas:
-  'rev-1 rev-1 rev-2 rev-5'
-  'rev-3 rev-4 rev-4 rev-5';
-}
-
 
 
 .attribution {
