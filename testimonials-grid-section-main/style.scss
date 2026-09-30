@@ -39,6 +39,7 @@ body {
   font-family: $font-main;
   font-size: 0.8125rem;
   font-weight: 500;
+  line-height: 1.1;
   background-color: $color-background;
 
 }
@@ -63,7 +64,65 @@ body {
   box-shadow: 50px 70px 50px -7px rgba(72, 85, 106, 0.24);
   padding: 32px;
   background-color: var(--color-background-card);
-  color: var(--color-font);
+  --color-font: #{$color-grey-400};
+  --color-font-accent: #{$color-grey-500};
+
+  &__author {
+    color: var(--color-font-accent);
+  }
+  &__status {
+    color: var(--color-font);
+    font-size: 0.6875rem;
+  }
+  &__title {
+    color: var(--color-font-accent);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  &__text {
+    color: var(--color-font);
+    line-height: 1.4;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    .card__image {
+      border-radius: 50%;
+      height: 28px;
+    }
+  }
+
+  &--purple {
+    --color-background-card: #{$color-purple-500};
+    --color-font: #{$color-purple-50};
+    --color-font-accent: #{$color-white};
+    background-image: url("images/bg-pattern-quotation.svg" );
+    background-repeat: no-repeat;
+    background-position: right 62px top;
+    .card__image {
+      outline: 2px solid $color-purple-300;
+    }
+  }
+  &--grey {
+    --color-background-card: #{$color-grey-500};
+    --color-font: #{$color-grey-100};
+    --color-font-accent: #{$color-white};
+  }
+  &--white {
+    --color-background-card: #{$color-white};
+  }
+  &--blue {
+    --color-background-card: #{$color-dark-blue};
+    --color-font: #{$color-grey-100};
+    --color-font-accent: #{$color-white};
+    .card__status { color: $color-white; }
+    .card__title { color: $color-grey-200; }
+    .card__image {
+      outline: 2px solid $color-purple-500;
+    }
+  }
 }
 
 
