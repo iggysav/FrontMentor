@@ -65,6 +65,16 @@ body {
     'rev-4 rev-4'
     'rev-5 rev-5'
   }
+  @media (max-width: 730px) {
+    grid-template-columns: 305px;
+    grid-template-areas:
+    'rev-1'
+    'rev-2'
+    'rev-3'
+    'rev-4'
+    'rev-5';
+
+  }
 }
 
 .card {
@@ -120,6 +130,9 @@ body {
     }
     @media (max-width: 1220px) {
       background-position: right 167px top;
+    }
+    @media (max-width: 730px) {
+      background-image: none;
     }
   }
   &--grey {
