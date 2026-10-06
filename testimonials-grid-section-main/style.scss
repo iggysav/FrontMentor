@@ -67,7 +67,8 @@ body {
     'rev-5 rev-5'
   }
   @media (max-width: 730px) {
-    grid-template-columns: minmax(0, 305px);
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 345px;
     grid-template-areas:
     'rev-1'
     'rev-2'

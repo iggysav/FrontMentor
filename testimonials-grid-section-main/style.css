@@ -48,7 +48,8 @@ body {
 }
 @media (max-width: 730px) {
   .reviews {
-    grid-template-columns: minmax(0, 305px);
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 345px;
     grid-template-areas: "rev-1" "rev-2" "rev-3" "rev-4" "rev-5";
   }
 }
