@@ -10,7 +10,19 @@ $font-main: "Red Hat Display", sans-serif;
   margin: 0;
   padding: 0;
 }
-
-body {
-  font-family: $font-main;
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-main;
+  }
+header, footer {
+  align-self: center;
 }
+
+main {
+  width: 100%;
+}
+  .attribution {
+    margin-top: auto;
+  }
